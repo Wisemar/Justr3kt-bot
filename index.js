@@ -8,6 +8,7 @@ bot.on("ready", function() {
     bot.user.setGame("Justr3kt-bot, !help"); 
     console.log("Je suis prêt à être utilisé.");
 });
+
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
         return channel.send('Bienvenue sur le serveur Justr3kt' + member.displayName)
@@ -26,9 +27,9 @@ bot.on('message', msg => {
     if (msg.content === prefix + "créateur"){
         msg.channel.send("Le créateur de se bot est Wisemar")
         console.log("Une personne a demandé pour aller sur ton site.")
-
-    
 });
+
+
 
 
 
