@@ -15,14 +15,6 @@ bot.on('guildMemberAdd', member => {
     }).catch(console.error)
 });
 
-const ban = require('./kick et ban/ban');
-
-
-bot.on('message', function (message){
-    if (ban.match(message)){
-        return ban.action(message)
-    }
-});
 
 bot.on('message', msg => {
     if (msg.content === "bonjour"){
@@ -35,6 +27,9 @@ bot.on('message', msg => {
         msg.channel.send("Le créateur de se bot est Wisemar")
         console.log("Une personne a demandé pour aller sur ton site.")
     }
+    if (msg.contenr === prefix + "b"){
+        msg.channel.send("Bienvenue à toi Nouveau bg !") 
+        console.log("une personne a dit bvn") 
 
 });
 
@@ -43,3 +38,4 @@ bot.on('message', msg => {
 
 
 bot.login("NTEwMTY4ODY2OTE2MTM5MDE5.DsZA7Q.BMJysrHyo07UI01KfV4bylUNFoE");
+
