@@ -17,13 +17,13 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', msg => {
     if (msg.content === "bonjour"){
-        msg.reply("Heureux de te revoir parmis nous.")
+        msg.reply("Bonjour. ")
     }
     if (msg.content.match(/salut/i)) {
             msg.reply('Je suis d\'accord avec toi.')
     }
-    if (msg.content === prefix + "site"){
-        msg.channel.send("https://alexpgm.000webhostapp.com/")
+    if (msg.content === prefix + "créateur"){
+        msg.channel.send("Le créateur de se bot est Wisemar")
         console.log("Une personne a demandé pour aller sur ton site.")
     }
 
