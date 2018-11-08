@@ -16,7 +16,6 @@ bot.on('guildMemberAdd', member => {
     }).catch(console.error)
 });
 
-
 bot.on('message', msg => {
     if (msg.content === "bonjour"){
         msg.reply("Bonjour. ")
@@ -29,11 +28,12 @@ bot.on('message', msg => {
         console.log("Une personne a demandé pour aller sur ton site.")
 });
 
-
-
-
-
-
-
 bot.login("NTEwMTY4ODY2OTE2MTM5MDE5.DsZA7Q.BMJysrHyo07UI01KfV4bylUNFoE");
+
+
+
+
+
+
+
 
