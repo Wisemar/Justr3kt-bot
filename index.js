@@ -15,29 +15,8 @@ bot.on('guildMemberAdd', member => {
     }).catch(console.error)
 });
 
-const ban = require('./kick et ban/ban');
 
 
-bot.on('message', function (message){
-    if (ban.match(message)){
-        return ban.action(message)
-    }
-});
-
-
-bot.on('message', msg => {
-    if (msg.content === "créateur"){
-        msg.reply("Le créateur du bot est Wisemar. ")
-    }
-    if (msg.content.match(/salut/i)) {
-            msg.reply('Je suis d\'accord avec toi.')
-    }
-    if (msg.content === prefix + "créateur"){
-        msg.channel.send("Le créateur du bot est Wisemar")
-        console.log("Une personne a demandé de savoir qui est le créateur .")
-    }
-
-});
 
 
 
