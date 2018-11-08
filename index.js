@@ -26,11 +26,8 @@ bot.on('message', msg => {
     if (msg.content === prefix + "créateur"){
         msg.channel.send("Le créateur de se bot est Wisemar")
         console.log("Une personne a demandé pour aller sur ton site.")
-    }
-    if (msg.content === prefix + "b"){
-        msg.channel.send("Bienvenue à toi Nouveau bg !") 
-        console.log("une personne a dit bvn") 
 
+    
 });
 
 
