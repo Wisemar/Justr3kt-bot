@@ -1,16 +1,16 @@
 const Discord = require('discord.js');
 
-var prefix = ("!");
+var prefix = ("/");
 
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    bot.user.setGame("Justr3kt-bot,!help"); 
+    bot.user.setGame("Justr3kt-bot, !help"); 
     console.log("Je suis prêt à être utilisé.");
 });
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur de Alexpgm' + member.displayName)
+        return channel.send('Bienvenue sur le serveur Justr3kt' + member.displayName)
         console.log(`${member.displayName} à rejoind le serveur.`)
     }).catch(console.error)
 });
@@ -26,15 +26,15 @@ bot.on('message', function (message){
 
 
 bot.on('message', msg => {
-    if (msg.content === "bonjour"){
-        msg.reply("Heureux de te revoir parmis nous.")
+    if (msg.content === "créateur"){
+        msg.reply("Le créateur du bot est Wisemar. ")
     }
     if (msg.content.match(/salut/i)) {
             msg.reply('Je suis d\'accord avec toi.')
     }
     if (msg.content === prefix + "créateur"){
         msg.channel.send("Le créateur du bot est Wisemar")
-        console.log("Une personne a demandé de savoir qui ezt le créateur .")
+        console.log("Une personne a demandé de savoir qui est le créateur .")
     }
 
 });
