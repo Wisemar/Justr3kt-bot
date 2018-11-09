@@ -40,5 +40,5 @@ bot.on('message', msg => {
 
 });
 
-bot.login(cfg.token); //a garder en version desktop
-bot.login(token); //a garder en version heroku
+bot.login("NTEwMTY4ODY2OTE2MTM5MDE5.DsdGog.59mVFH58fwJPiUhtDKSw0koiP9M");
+
